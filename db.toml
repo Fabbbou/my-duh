@@ -1,0 +1,9 @@
+[aliases]
+ll = "ls -alishF"
+
+[exports]
+EDITOR = "code"
+
+[metadata]
+url_origin = "https://github.com/Fabbbou/my-duh"
+name_origin = "my-duh"
