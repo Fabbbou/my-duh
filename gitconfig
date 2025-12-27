@@ -1,0 +1,12 @@
+[alias]
+	cc = checkout
+	c = commit
+	s = status
+	l = log -n 4 --pretty=oneline
+	la = log --pretty=oneline
+	p = push -u origin HEAD
+	pt = push -u origin HEAD --tags
+	r1 = reset --soft HEAD~1
+	squash-all = "!f(){ git reset $(git commit-tree HEAD^{tree} \"$@\");};f"
+	ca = commit --amend
+	pr = request-pull

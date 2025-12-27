@@ -1,5 +1,29 @@
 [aliases]
 ll = "ls -alishF"
+adssh = "$REL_DOTFILES_HOME/bin/add_ssh_key_to_remote.sh"
+lnfolder = "$REL_DOTFILES_HOME/bin/ln_folder.sh"
+gogit = 'cd ~/git'
+godotfiles = "cd $REL_DOTFILES_HOME"
+setdot = "edit_open $REL_DOTFILES_HOME"
+setgit = "edit_open $REL_DOTFILES_HOME/gitconfig"
+setlocal = "edit_open $REL_DOTFILES_HOME/local/"
+setbashrc = "edit_open ~/.bashrc"
+g = 'git'
+gitalias = 'git config --get-regexp ^alias'
+gac = 'git add . && git commit -m'
+ghnoreply = "echo \"$(gh api user --jq '.id')+$(gh api user --jq '.login')@users.noreply.github.com\""
+dp = "docker ps"
+dpa = "docker ps -a"
+dcub = "docker compose up --build"
+dcd = "docker compose down"
+dcdr = "docker compose down --remove-orphans"
+system_docker_start = "sudo systemctl enable docker.service && sudo systemctl enable containerd.service"
+system_docker_disable = "sudo systemctl disable docker.service && sudo systemctl disable containerd.service"
+gr = "./gradlew"
+help_screen = "echo 'screen cmd: ctrl + a, then d to detach. screen -r to resume. screen -ls to list.'"
+windows_sleep = "rundll32.exe powrprof.dll,SetSuspendState 0,1,0"
+gomod = "cd git/go-model/ && make serve"
+test11="echo \"test222\""
 
 [exports]
 EDITOR = "code"
