@@ -22,8 +22,6 @@ system_docker_disable = "sudo systemctl disable docker.service && sudo systemctl
 gr = "./gradlew"
 help_screen = "echo 'screen cmd: ctrl + a, then d to detach. screen -r to resume. screen -ls to list.'"
 windows_sleep = "rundll32.exe powrprof.dll,SetSuspendState 0,1,0"
-gomod = "cd git/go-model/ && make serve"
-test11="echo \"test222\""
 
 [exports]
 EDITOR = "code"
