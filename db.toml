@@ -1,13 +1,6 @@
 [aliases]
 ll = "ls -alishF"
-adssh = "$REL_DOTFILES_HOME/bin/add_ssh_key_to_remote.sh"
-lnfolder = "$REL_DOTFILES_HOME/bin/ln_folder.sh"
 gogit = 'cd ~/git'
-godotfiles = "cd $REL_DOTFILES_HOME"
-setdot = "edit_open $REL_DOTFILES_HOME"
-setgit = "edit_open $REL_DOTFILES_HOME/gitconfig"
-setlocal = "edit_open $REL_DOTFILES_HOME/local/"
-setbashrc = "edit_open ~/.bashrc"
 g = 'git'
 gitalias = 'git config --get-regexp ^alias'
 gac = 'git add . && git commit -m'
@@ -22,6 +15,7 @@ system_docker_disable = "sudo systemctl disable docker.service && sudo systemctl
 gr = "./gradlew"
 help_screen = "echo 'screen cmd: ctrl + a, then d to detach. screen -r to resume. screen -ls to list.'"
 windows_sleep = "rundll32.exe powrprof.dll,SetSuspendState 0,1,0"
+setbashrc = "edit $HOME/.bashrc"
 
 [exports]
 EDITOR = "code"
