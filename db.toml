@@ -19,6 +19,7 @@ setbashrc = "edit $HOME/.bashrc"
 
 [exports]
 EDITOR = "code"
+GITHUB_TOKEN = "$(gh auth token)"
 
 [metadata]
 url_origin = "https://github.com/Fabbbou/my-duh"
