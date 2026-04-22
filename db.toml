@@ -1,25 +1,35 @@
+
 [aliases]
-ll = "ls -alishF"
-gogit = 'cd ~/git'
-g = 'git'
-gitalias = 'git config --get-regexp ^alias'
-gac = 'git add . && git commit -m'
-ghnoreply = "echo \"$(gh api user --jq '.id')+$(gh api user --jq '.login')@users.noreply.github.com\""
+dcrm = "docker compose down --remove-orphans -v"
+dcub = "docker compose up --build"
+dcubd = "docker compose up --build -d"
+direnv_hook_zsh = "eval \"$(direnv hook zsh)\""
 dp = "docker ps"
 dpa = "docker ps -a"
-dcub = "docker compose up --build"
-dcd = "docker compose down"
-dcdr = "docker compose down --remove-orphans"
-system_docker_start = "sudo systemctl enable docker.service && sudo systemctl enable containerd.service"
-system_docker_disable = "sudo systemctl disable docker.service && sudo systemctl disable containerd.service"
+drma = "docker rm $(docker ps -aq) -f"
+echo1 = "echo 1"
+g = "git"
+gac = "git add . && git commit -m"
+ghnoreply = "echo \"$(gh api user --jq '.id')+$(gh api user --jq '.login')@users.noreply.github.com\""
+gitalias = "git config --get-regexp ^alias"
+gogit = "cd ~/git"
 gr = "./gradlew"
 help_screen = "echo 'screen cmd: ctrl + a, then d to detach. screen -r to resume. screen -ls to list.'"
-windows_sleep = "rundll32.exe powrprof.dll,SetSuspendState 0,1,0"
+k = "kubectl"
+kns = "kubectl config set-context --current --namespace"
+ll = "ls -alishF"
+prs = "gh pr list --author=\"@me\""
+precommit_disable = "export PRE_COMMIT_ALLOW_NO_CONFIG=1"
+precommit_enable = "export PRE_COMMIT_ALLOW_NO_CONFIG=0"
+print_ssh_config = "cat ~/.ssh/config"
 setbashrc = "edit $HOME/.bashrc"
+system_docker_disable = "sudo systemctl disable docker.service && sudo systemctl disable containerd.service"
+system_docker_start = "sudo systemctl enable docker.service && sudo systemctl enable containerd.service"
+tcp_usage = "sudo lsof -nP -iTCP:8080 | grep LISTEN"
+windows_sleep = "rundll32.exe powrprof.dll,SetSuspendState 0,1,0"
 
 [exports]
-EDITOR = "code"
-GITHUB_TOKEN = "$(gh auth token)"
+EDITOR = "nvim"
 
 [metadata]
 url_origin = "https://github.com/Fabbbou/my-duh"
